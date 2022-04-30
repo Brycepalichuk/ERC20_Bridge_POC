@@ -53,8 +53,8 @@ export default function Home() {
       height="100vw"
       >
         <Header user={user} logout={logout} isLoggingOut={isLoggingOut}/>
-        <Box flex="1" bgGradient="linear(to-br, teal.400, green.200)" px="44" py="20">
-          <Tabs size="lg" colorScheme="teal" align="center" variant="enclosed">
+        <Box flex="1" bg="red.500" px="44" py="20">
+          <Tabs size="lg" colorScheme="purple" align="center" variant="enclosed">
             <TabList>
               <Tab fontWeight="bold">Profile</Tab>
               <Tab fontWeight="bold">SICKLE Token Faucet</Tab>

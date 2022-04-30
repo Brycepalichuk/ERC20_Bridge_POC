@@ -31,7 +31,7 @@ export default function Faucet() {
 
     return (
         <CustomContainer>
-            <Text fontSize="xl" fontWeight="bold">Recieve SICKLE (RINKEBY ADDRESS: 0xc6Ca96a4bfB6814c9D07000b14b323B0Cc8D3374)</Text>
+            <Text fontSize="xl" fontWeight="bold">Recieve SICKLE (0xc6Ca96a4bfB6814c9D07000b14b323B0Cc8D3374, Rinkeby)</Text>
             <form onSubmit={async e => {
                 e.preventDefault()
                 await Moralis.enableWeb3()
