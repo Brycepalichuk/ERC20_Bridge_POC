@@ -30,7 +30,7 @@ export default function Faucet() {
 
     return (
         <CustomContainer>
-            <Text fontSize="xl" fontWeight="bold">SICKLE Token Addresses:</Text>
+            <Text fontSize="xl" fontWeight="bold">SICKLE Token Addresses</Text>
             <Text fontSize="l" fontWeight="bold">Rinkeby SICKLE Address: 0xc6Ca96a4bfB6814c9D07000b14b323B0Cc8D3374</Text>
             <Text fontSize="l" fontWeight="bold">Mumbai xSICKLE Address: 0xC59ce03F8dD191cA34ff04778014cb3808F5C89A</Text>
             <Center>

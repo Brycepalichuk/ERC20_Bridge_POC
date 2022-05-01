@@ -63,15 +63,15 @@ export default function RinkebyToMumbai() {
                             Amount to Bridge
                         </FormLabel>
                     </Center>
-                    <Center>
-                        <NumberInput width="auto" step={0.1} onChange={handleChange} defaultValue={1} min={0.1}>
-                            <NumberInputField width="auto" id="amount"  value={amount} />
-                        </NumberInput>
-                    </Center>
+                    <NumberInput width="auto" step={0.1} onChange={handleChange} defaultValue={1} min={0.1}>
+                        <NumberInputField width="auto" id="amount"  value={amount} />
+                        <NumberInputStepper width="auto" >
+                            <NumberIncrementStepper width="auto" />
+                            <NumberDecrementStepper width="auto" />
+                        </NumberInputStepper>
+                    </NumberInput>
                 </FormControl>
-                <Center>
-                    <Button mt="4" type="submit" colorScheme="teal" >⬇️&nbsp; Bridge SICKLE to Mumbai</Button>
-                </Center>
+                <Button mt="4" type="submit" colorScheme="teal" >⬇️&nbsp; Bridge SICKLE to Mumbai</Button>
             </form>
         </CustomContainer>
     )

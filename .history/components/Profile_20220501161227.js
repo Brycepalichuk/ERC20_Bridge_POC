@@ -12,9 +12,8 @@ export default function Profile({user}) {
 
     return(
         <CustomContainer>
-            <Text fontSize="xl" fontWeight="bold">Profile Info:</Text>
-            <Text fontSize="l" fontWeight="bold"><b>😎&nbsp; Username:</b> {user.getUsername()}</Text>
-            <Text fontSize="l" fontWeight="bold"><b>💰&nbsp; Wallet Address:</b> {user.get('ethAddress')}</Text>
+            <Text><b>😎&nbsp; Username:</b> {user.getUsername()}</Text>
+            <Text><b>💰&nbsp; Wallet Address:</b> {user.get('ethAddress')}</Text>
             <form onSubmit={e => {
                 e.preventDefault()
                 if(input.trim() !== '') {
@@ -31,9 +30,7 @@ export default function Profile({user}) {
                         <Input width="auto" id="username" type="text" placeholder="ex. LilCat" value={input} onChange={e => setInput(e.target.value)}></Input>
                     </Center>
                 </FormControl>
-                <Center>
-                    <Button type="submit" colorScheme="teal" disabled={isUserUpdating}>✅&nbsp; Change Username</Button>
-                </Center>
+                <Button type="submit" colorScheme="teal" disabled={isUserUpdating}>✅&nbsp; Change Username</Button>
             </form>
         </CustomContainer>
     )

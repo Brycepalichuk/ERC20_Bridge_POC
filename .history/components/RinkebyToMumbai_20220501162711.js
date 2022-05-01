@@ -69,9 +69,7 @@ export default function RinkebyToMumbai() {
                         </NumberInput>
                     </Center>
                 </FormControl>
-                <Center>
-                    <Button mt="4" type="submit" colorScheme="teal" >⬇️&nbsp; Bridge SICKLE to Mumbai</Button>
-                </Center>
+                <Button mt="4" type="submit" colorScheme="teal" >⬇️&nbsp; Bridge SICKLE to Mumbai</Button>
             </form>
         </CustomContainer>
     )

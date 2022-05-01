@@ -12,7 +12,6 @@ export default function Profile({user}) {
 
     return(
         <CustomContainer>
-            <Text fontSize="xl" fontWeight="bold">Profile Info:</Text>
             <Text fontSize="l" fontWeight="bold"><b>😎&nbsp; Username:</b> {user.getUsername()}</Text>
             <Text fontSize="l" fontWeight="bold"><b>💰&nbsp; Wallet Address:</b> {user.get('ethAddress')}</Text>
             <form onSubmit={e => {

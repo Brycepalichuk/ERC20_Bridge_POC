@@ -5,7 +5,7 @@ import CustomContainer from "./CustomContainer";
 import { Button } from "@chakra-ui/button";
 import Moralis from "moralis";
 import { useToast } from "@chakra-ui/toast";
-import { Center, Text } from "@chakra-ui/layout";
+import { Text } from "@chakra-ui/layout";
 
 export default function Faucet() {
     const [receiver, setReceiver] = useState('')
@@ -30,12 +30,8 @@ export default function Faucet() {
 
     return (
         <CustomContainer>
-            <Text fontSize="xl" fontWeight="bold">SICKLE Token Addresses:</Text>
-            <Text fontSize="l" fontWeight="bold">Rinkeby SICKLE Address: 0xc6Ca96a4bfB6814c9D07000b14b323B0Cc8D3374</Text>
-            <Text fontSize="l" fontWeight="bold">Mumbai xSICKLE Address: 0xC59ce03F8dD191cA34ff04778014cb3808F5C89A</Text>
-            <Center>
-                <Text mt="4" fontSize="xl" fontWeight="bold">Recieve SICKLE Token on RINKEBY below</Text>
-            </Center>
+            <Text fontSize="xl" fontWeight="bold">Recieve SICKLE Token on RINKEBY</Text>
+            <Text fontSize="l" fontWeight="bold">Rinkeby Address: 0xc6Ca96a4bfB6814c9D07000b14b323B0Cc8D3374</Text>
             <form onSubmit={async e => {
                 e.preventDefault()
                 await Moralis.enableWeb3()
@@ -61,17 +57,11 @@ export default function Faucet() {
                     }
                 })
             }}>
-                <FormControl mt="2" mb="2">
-                    <Center>
-                        <FormLabel htmlFor="receiver" mt="2"> Input wallet address and click button to recieve 10 SICKLE tokens (ONCE PER DAY MAX)</FormLabel>
-                    </Center>
-                    <Center>
-                        <Input width="auto" id="receiver" type="text" placeholder="0x..." value={receiver} onChange={e => setReceiver(e.target.value)} />
-                    </Center>
+                <FormControl mt="6" mb="6">
+                    <FormLabel htmlFor="receiver" mt="4"> Input address to recieve 10 SICKLE tokens (ONCE PER DAY MAX)</FormLabel>
+                    <Input id="receiver" type="text" placeholder="0x..." value={receiver} onChange={e => setReceiver(e.target.value)} />
                 </FormControl>
-                <Center>
-                    <Button type="submit" colorScheme="teal" >⬇️&nbsp; Request SICKLE Tokens</Button>
-                </Center>
+                <Button type="submit" colorScheme="teal" >⬇️&nbsp; Request SICKLE Tokens</Button>
             </form>
         </CustomContainer>
     )

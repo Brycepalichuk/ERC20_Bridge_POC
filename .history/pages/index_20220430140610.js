@@ -5,7 +5,6 @@ import Head from "next/head"
 import { useMoralis } from "react-moralis"
 import Faucet from "../components/Faucet"
 import Header from "../components/Header"
-import MumbaiToRinkeby from "../components/MumbaiToRinkeby"
 import Profile from "../components/Profile"
 import RinkebyToMumbai from "../components/RinkebyToMumbai"
 
@@ -60,8 +59,8 @@ export default function Home() {
             <TabList>
               <Tab fontWeight="bold">Profile</Tab>
               <Tab fontWeight="bold">SICKLE Token Faucet</Tab>
-              <Tab fontWeight="bold">Send SICKLE from Rinkeby &nbsp;➡️&nbsp; Mumbai</Tab>
-              <Tab fontWeight="bold">Send SICKLE from Mumbai &nbsp;➡️&nbsp; Rinkeby</Tab>
+              <Tab fontWeight="bold">Send Token from Rinkeby &nbsp;➡️&nbsp; Mumbai</Tab>
+              <Tab fontWeight="bold">Send Token from Mumbai &nbsp;➡️&nbsp; Rinkeby</Tab>
             </TabList>
             <TabPanels>
               <TabPanel>
@@ -73,9 +72,7 @@ export default function Home() {
               <TabPanel>
                 <RinkebyToMumbai />
               </TabPanel>
-              <TabPanel>
-                <MumbaiToRinkeby />
-              </TabPanel>
+              <TabPanel>Mumbai➡️Rinkeby</TabPanel>
             </TabPanels>
           </Tabs>
         </Box>

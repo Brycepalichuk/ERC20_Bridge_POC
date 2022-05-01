@@ -60,8 +60,8 @@ export default function Home() {
             <TabList>
               <Tab fontWeight="bold">Profile</Tab>
               <Tab fontWeight="bold">SICKLE Token Faucet</Tab>
-              <Tab fontWeight="bold">Send SICKLE from Rinkeby &nbsp;➡️&nbsp; Mumbai</Tab>
-              <Tab fontWeight="bold">Send SICKLE from Mumbai &nbsp;➡️&nbsp; Rinkeby</Tab>
+              <Tab fontWeight="bold">Send Token from Rinkeby &nbsp;➡️&nbsp; Mumbai</Tab>
+              <Tab fontWeight="bold">Send Token from Mumbai &nbsp;➡️&nbsp; Rinkeby</Tab>
             </TabList>
             <TabPanels>
               <TabPanel>
